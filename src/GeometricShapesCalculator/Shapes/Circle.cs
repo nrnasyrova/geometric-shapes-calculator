@@ -10,7 +10,7 @@ public class Circle: ICircle
     {
         Radius = radius;
         
-        if (!IsValidShape())
+        if (!IsValidCircle())
         {
             throw new ArgumentException("Invalid circle");
         }
@@ -26,7 +26,7 @@ public class Circle: ICircle
         return Radius * 2;
     }
 
-    private bool IsValidShape()
+    private bool IsValidCircle()
     {
         return Radius > 0;
     }
