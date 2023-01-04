@@ -18,7 +18,7 @@ public class Circle: ICircle
 
     public double CalculateArea()
     {
-        return Math.PI * Math.Sqrt(Radius);
+        return Math.PI * Math.Pow(Radius, 2);
     }
 
     public double CalculateDiameter()

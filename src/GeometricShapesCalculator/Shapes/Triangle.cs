@@ -33,7 +33,7 @@ public class Triangle: ITriangle
     
     public bool IsRightTriangle()
     {
-        return Math.Abs(Math.Pow(GetLongestSide(), 2) - (Math.Pow(Math.Sqrt(GetShortestSide()), 2) + Math.Pow(GetMiddleSide(), 2))) < 0;
+        return Math.Pow(GetLongestSide(), 2) - (Math.Pow(GetShortestSide(), 2) - Math.Pow(GetMiddleSide(), 2)) == 0.0;
     }
 
     private bool IsValidTriangle()
